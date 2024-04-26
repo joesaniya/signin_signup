@@ -1,9 +1,7 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:login_logup_start_task/view/home_view.dart';
-import 'package:login_logup_start_task/view/signin_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,26 +30,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: LoginPage(),
-      // home: HomeScreen(),
+      // home: LoginPage(),
+      home: HomeScreen(),
     );
-  }
-}
-
-class AuthWrapper extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    final FirebaseAuth auth = FirebaseAuth.instance;
-
-    // Check if a user is currently signed in
-    final User? user = auth.currentUser;
-
-    if (user != null) {
-      // If the user is signed in, navigate to the home screen
-      return HomeScreen();
-    } else {
-      // If the user is not signed in, navigate to the login screen
-      return LoginPage();
-    }
   }
 }

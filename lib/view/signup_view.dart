@@ -39,7 +39,7 @@ class _SignupPageState extends State<SignupPage> {
         'email': user.email.toString(),
         'created_at': DateTime.now(),
       });
-
+      log('email data:${user.email.toString()}');
       // Save username to SharedPreferences
       SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.setString('username', user.email.toString());
