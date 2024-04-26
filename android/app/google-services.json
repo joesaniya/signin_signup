@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1049603348619",
+    "project_id": "login-demo-6222f",
+    "storage_bucket": "login-demo-6222f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049603348619:android:48a1aadfa9e2054af09c8e",
+        "android_client_info": {
+          "package_name": "com.example.login_logup_start_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCegYJd3ThyV25vBjGBNEfkSMjoW8tnkZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
